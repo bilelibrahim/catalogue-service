@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 /**
- * Created by A662292 on 20/03/2019.
+ * Created by Bilel on 20/03/2019.
  */
 // Pour permet un acces REST
 @RepositoryRestResource
