@@ -16,7 +16,7 @@ import java.util.Collection;
 @Document
 @Data
 @AllArgsConstructor
-@NoArgsConstructor @ToString
+@NoArgsConstructor
 public class Category {
     @Id
     private String id;
@@ -24,4 +24,12 @@ public class Category {
     // je sauvegarde les produits dans un autre fichier, dans categorie je sauvegarde seulement l'id du produit
     @DBRef
     private Collection<Product> products = new ArrayList<Product>();
+
+    @Override
+    public String toString() {
+        return "Category{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }
